@@ -7,5 +7,8 @@ public class HelloWorld {
 	static void show(){
 		System.out.println("Showing");
 	}
+	static void tell(){
+		System.out.println("Telling");
+	}
 
 }
