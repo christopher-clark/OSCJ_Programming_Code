@@ -1,6 +1,6 @@
 package com.chris.oscjp.chapter2;
 
-public class HorseTest {
+public class AnimalTest {
 
 	public static void main(String[] args) {
 		LeadRope rope = new LeadRope();
@@ -8,6 +8,10 @@ public class HorseTest {
 		Animal a = new Animal();
 		horse.eat();
 		a.eat();
+		Animal cat = new Cat();
+		cat.eat();
+		Animal kit = new Kitten();
+		kit.eat();
 	}
 
 }
