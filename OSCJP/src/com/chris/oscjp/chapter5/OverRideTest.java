@@ -12,7 +12,7 @@ public class OverRideTest {
 		Animal aniKitten = new Kitten();
 		aniKitten.makeNoise();
 		ani.makeNoise();
-		Cat cat = (Cat) ani;
+		//Cat cat = (Cat) ani;
 	}
 
 }

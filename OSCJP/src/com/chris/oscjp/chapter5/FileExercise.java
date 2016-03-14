@@ -45,11 +45,11 @@ public class FileExercise {
 	      
 	      try {
 			fr = new FileReader(file);
-			System.out.println("Creating File Reader " + fr);
-		} catch (FileNotFoundException fnf) {
-			// TODO Auto-generated catch block
-			fnf.printStackTrace();
-		}
+			
+	      } catch (FileNotFoundException fnf) {
+				// TODO Auto-generated catch block
+				fnf.printStackTrace();
+	      }
 	      
 	    BufferedReader fread = new BufferedReader(fr);
 	      try {
