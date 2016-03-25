@@ -1,9 +1,13 @@
-package com.chris.oscjp.chapter5;
+package com.chris.oscjp.chapter6;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+
+import com.chris.oscjp.chapter5.Archer;
+import com.chris.oscjp.chapter5.GamePlayer;
+import com.chris.oscjp.chapter5.Swordsman;
 
 public class TestSerialise {
 
