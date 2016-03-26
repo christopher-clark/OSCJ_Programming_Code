@@ -31,7 +31,7 @@ public class ListsAndIterators {
 		
 		Iterator<CDInfo> it = music.iterator();
 		while(it.hasNext()){
-			System.out.println(" CD is " + it.next().getArtist());
+			System.out.println(" CD in List is " + it.next().getArtist());
 		}
 		
 		music.remove(2);
@@ -39,7 +39,7 @@ public class ListsAndIterators {
 		CDInfo[] sounds = new CDInfo[music.size()];
 		sounds = music.toArray(sounds);
 		for(CDInfo inf : sounds)
-			System.out.println(" CD is " + inf.getTitle());
+			System.out.println(" CD in Array is " + inf.getTitle());
 	}
 
 }

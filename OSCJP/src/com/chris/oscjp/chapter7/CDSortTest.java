@@ -3,7 +3,7 @@ import java.util.*;
 
 public class CDSortTest {
 	
-	private static ArrayList<CDInfo> cdCollection = new ArrayList<CDInfo>();
+	private static List<CDInfo> cdCollection = new ArrayList<CDInfo>();
 	
 	public static void main(String[] args) {
 		CDSortTest cdSort = new CDSortTest();
@@ -23,12 +23,13 @@ public class CDSortTest {
 		addCD(dylan);
 		addCD(weather_report);
 		addCD(stanley);
+		System.out.println("Unsorted ordered by addition");
 		cdSort.displayDetails();
-		System.out.println();
+		System.out.println("Sorted by Ratings");
 		RatingSort rs = new RatingSort();
 		Collections.sort(cdCollection,rs);
 		cdSort.displayDetails();
-		System.out.println();
+		System.out.println("Sorted by Genre");
 		GenreSort gs = new GenreSort();
 		Collections.sort(cdCollection,gs);
 		cdSort.displayDetails();

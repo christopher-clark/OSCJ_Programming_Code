@@ -22,6 +22,10 @@ public class ListToArrayTest {
 		for(String str : sa)
 			System.out.println("String array contains " + str);
 		
-			
+		Arrays.sort(sa);	
+		
+		System.out.println();
+		for(String str : sa)
+			System.out.println("Sorted String array contains " + str);
 	}
 }
