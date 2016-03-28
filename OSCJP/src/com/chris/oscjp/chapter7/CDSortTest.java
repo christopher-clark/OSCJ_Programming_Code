@@ -26,11 +26,11 @@ public class CDSortTest {
 		System.out.println("Unsorted ordered by addition");
 		cdSort.displayDetails();
 		System.out.println("Sorted by Ratings");
-		RatingSort rs = new RatingSort();
+		CDRatingSort rs = new CDRatingSort();
 		Collections.sort(cdCollection,rs);
 		cdSort.displayDetails();
 		System.out.println("Sorted by Genre");
-		GenreSort gs = new GenreSort();
+		CDGenreSort gs = new CDGenreSort();
 		Collections.sort(cdCollection,gs);
 		cdSort.displayDetails();
 	}
