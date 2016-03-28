@@ -1,5 +1,7 @@
-package com.chris.oscjp.chapter5;
+package com.chris.oscjp.chapter6;
 import java.io.*;
+
+import com.chris.oscjp.chapter5.Dog;
 
 class SuperNotSerial {
 	public static void main(String [] args) {

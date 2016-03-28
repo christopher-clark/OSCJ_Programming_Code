@@ -2,6 +2,7 @@ package com.chris.oscjp.chapter3;
 class Dog {
 	Collar c; // instance variable
 	String name; // instance variable
+	int weight;
 	
 	public static void main(String [] args) {
 

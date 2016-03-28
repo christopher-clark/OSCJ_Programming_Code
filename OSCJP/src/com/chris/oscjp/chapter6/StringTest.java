@@ -1,4 +1,4 @@
-package com.chris.oscjp.chapter5;
+package com.chris.oscjp.chapter6;
 
 import org.omg.CORBA.TRANSACTION_MODE;
 
