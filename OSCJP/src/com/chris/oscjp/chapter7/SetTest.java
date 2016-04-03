@@ -14,9 +14,13 @@ class SetTest {
 	
 	for(int x=0; x<ba.length; x++)
 		System.out.print(ba[x] + " ");
+	
 	System.out.println("\n");
 	
-	for(Object o : s)
-		System.out.print(o + " ");
+	Iterator<Object> setIt = s.iterator();
+	
+	while(setIt.hasNext())
+		System.out.println("Set Iterator = " + setIt.next());
+	
 	}
 }
