@@ -21,18 +21,47 @@ public class CDSortTest {
 		addCD(coltrane);
 		addCD(dizzy);
 		addCD(dylan);
+		addCD(miles);
 		addCD(weather_report);
 		addCD(stanley);
+		CDInfo[] cds = {miles,mingus,dylan,coltrane,dizzy,weather_report,stanley,clash};
+		
 		System.out.println("Unsorted ordered by addition");
 		cdSort.displayDetails();
 		System.out.println("Sorted by Ratings");
-		RatingSort rs = new RatingSort();
+		CDRatingSort rs = new CDRatingSort();
 		Collections.sort(cdCollection,rs);
 		cdSort.displayDetails();
 		System.out.println("Sorted by Genre");
-		GenreSort gs = new GenreSort();
+		CDGenreSort gs = new CDGenreSort();
 		Collections.sort(cdCollection,gs);
 		cdSort.displayDetails();
+		
+		
+		for(int i=0;i < cds.length;i++)
+			System.out.println("CD = " + cds[i].getArtist() + cds[i].getGenre() + cds[i].getTitle() );
+		System.out.println("Miles Davis = "
+				+ Arrays.binarySearch(cds,miles));
+		System.out.println("Weather Report = "
+				+ Arrays.binarySearch(cds,weather_report));
+		System.out.println("The Clash = "
+				+ Arrays.binarySearch(cds,clash));
+		
+		Arrays.sort(cds);
+		Animal[] ani = new Animal[2];
+		Cat[] cat = new Cat[2];
+		/*cat = ani;
+		ani = cat;*/
+		
+		for(int i=0;i < cds.length;i++)
+			System.out.println("Sorted by Artist = " + cds[i].getArtist() + cds[i].getGenre() + cds[i].getTitle() );
+		
+		System.out.println("Miles Davis = "
+				+ Arrays.binarySearch(cds,miles));
+		System.out.println("Weather Report = "
+				+ Arrays.binarySearch(cds,weather_report));
+		System.out.println("The Clash = "
+				+ Arrays.binarySearch(cds,clash));
 	}
 	
 	public static void addCD(CDInfo details){
