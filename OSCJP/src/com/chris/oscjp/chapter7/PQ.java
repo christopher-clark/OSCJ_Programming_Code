@@ -10,7 +10,7 @@ class PQ {
 
 	public static void main(String[] args) {
 		
-		int[] ia = {1,5,3,7,6,9,8 }; // unordered data
+		int[] ia = {9,8,7,1,5,3,7,6,9,8 }; // unordered data
 		
 		PriorityQueue<Integer> pq1 = new PriorityQueue<Integer>(); // use natural order
 		
@@ -18,7 +18,7 @@ class PQ {
 			pq1.offer(x);
 		
 		for(int x : ia) // review queue
-			System.out.print(pq1.poll() + " ");
+			System.out.print("pq1.poll() = " + pq1.poll() + "\n");
 		
 		System.out.println("");
 		PQsort pqs = new PQsort(); // get a Comparator
@@ -35,6 +35,6 @@ class PQ {
 		System.out.println("size " + pq2.size());
 		
 		for(int x : ia) // review queue
-			System.out.print(pq2.poll() + " ");
+			System.out.print("pq2.poll() = " + pq2.poll() + "\n");
 		}
 	}
