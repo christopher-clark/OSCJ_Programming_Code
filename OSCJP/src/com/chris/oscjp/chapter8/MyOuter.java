@@ -14,7 +14,9 @@ class MyOuter {
 			public void seeOuter() {
 				System.out.println("Outer x is " + x);
 				System.out.println("Inner class ref is " + this);
+				System.out.println("Inner class name variable is " + this.name);
 				System.out.println("Outer class ref is " + MyOuter.this);
+				System.out.println("Outer class x squared is " + (MyOuter.this.x * MyOuter.this.x));
 			}
 			public String toString(){
 				return name;
