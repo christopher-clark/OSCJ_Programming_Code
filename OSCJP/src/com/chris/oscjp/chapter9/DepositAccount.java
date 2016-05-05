@@ -1,6 +1,6 @@
 package com.chris.oscjp.chapter9;
 
-public class DepositAccount {
+ public class DepositAccount {
 	private int balance = 0;
 	
 	public void addDeposit(int amount){

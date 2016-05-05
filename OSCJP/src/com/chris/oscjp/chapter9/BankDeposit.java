@@ -12,6 +12,7 @@ public class BankDeposit implements Runnable{
 	public void makeDeposit(int amount){
 		System.out.println(" Before deposit Balance = " + depAcc.getBalance());
 		if(depAcc.getBalance() < MAX_BALANCE){
+			System.out.println("In if statement Thread is " + Thread.currentThread().getName());
 			try {
 				Thread.sleep(500);
 				} catch(InterruptedException ex) {
@@ -22,6 +23,7 @@ public class BankDeposit implements Runnable{
 			System.out.println("Balance = " + depAcc.getBalance());
 		}
 		else {
+			System.out.println("Thread is " + Thread.currentThread().getName());
 			System.out.println("Deposit cannot be made. Balance = " + depAcc.getBalance());
 		}
 	}
